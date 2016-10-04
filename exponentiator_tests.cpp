@@ -29,5 +29,7 @@ TEST(Exponentiator, DoubleDigit)
 TEST(Exponentiator, Large)
 {
     Exponentiator exp(test_modifier);
-    EXPECT_EQ(11275585012758672893uL, std::hash<std::string>{}(exp.run(99999)));
+    std::string result(exp.run(99999));
+    EXPECT_EQ("3678812805", result.substr(0, 10));
+    EXPECT_EQ(499995, result.length());
 }

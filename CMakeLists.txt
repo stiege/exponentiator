@@ -1,4 +1,4 @@
-cmake_minimum_required(VERSION 3.5)
+cmake_minimum_required(VERSION 2.8)
 project(exponentiator)
 enable_testing()
 
@@ -6,6 +6,7 @@ set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -std=c++11 -Wall -Werror -Wpedantic")
 set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -Wextra -Wswitch-default")
 set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -Wunused -Wuninitialized")
 set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -Wshadow -Wcast-align -Wparentheses")
+set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -pthread")
 
 include(${CMAKE_CURRENT_LIST_DIR}/cmake/gtest.cmake)
 set(CMAKE_MODULE_PATH ${CMAKE_CURRENT_LIST_DIR}/cmake)

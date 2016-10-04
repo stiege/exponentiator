@@ -3,6 +3,7 @@
 #include "reverse.h"
 #include <exception>
 #include <stdlib.h>
+#include <algorithm>
 
 using namespace std;
 
