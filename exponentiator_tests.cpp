@@ -3,6 +3,14 @@
 
 using exponentiator::Exponentiator;
 
+/*
+The exponentiator should exponentiate the parameter passed in based on
+the modifier function it is constructed with.
+
+Here we just use a straight pass though so:
+5 -> 5^5 == 3125, as below
+*/
+
 unsigned long int (test_modifier)(unsigned long int val)
 {
     return val;

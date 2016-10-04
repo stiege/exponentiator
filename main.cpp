@@ -9,10 +9,18 @@ using namespace std;
 
 const string USAGE_INFO("Usage: <integer[0-99999]>");
 
+/*
+TODO: The error handling in this source is pending functional testing.
+Any changes should be tested manually and include inputs of different
+length as well as mixing special characters and letters in with the
+numbers. 
+*/
+
 static bool input_is_valid(string input)
 {
     bool retval = true;
     if (input.length() > 5 ||
+        input.length() == 0 ||
     !all_of(input.begin(), input.end(), ::isdigit))
     {
         retval = false;

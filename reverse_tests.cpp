@@ -1,6 +1,9 @@
 #include "gtest/gtest.h"
 #include "reverse.h"
 
+/*
+The reverse function should take an integer and reverse it.
+*/
 TEST(Reverse, Trivial)
 {
     EXPECT_EQ(0uL, reverse(0));
